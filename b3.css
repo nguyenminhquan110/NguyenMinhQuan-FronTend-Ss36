@@ -1,0 +1,61 @@
+visual code/Ss36/b3.css */
+
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Định dạng nhóm nút */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-button:hover {
+    transform: scale(1.1);
+}
+
+/* Màu sắc cho từng nút */
+.color-button[data-color="red"] {
+    background-color: red;
+}
+
+.color-button[data-color="blue"] {
+    background-color: blue;
+}
+
+.color-button[data-color="yellow"] {
+    background-color: yellow;
+    color: black;
+}
+
+.color-button[data-color="purple"] {
+    background-color: purple;
+}
