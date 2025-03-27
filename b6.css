@@ -1,0 +1,158 @@
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px;
+    color: #333;
+}
+
+/* Container sản phẩm */
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hình ảnh sản phẩm */
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+/* Đánh giá sao */
+#rating {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.stars {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.stars.active,
+.stars:hover {
+    color: #f39c12;
+    transform: scale(1.2);
+}
+
+/* Phần hiển thị đánh giá */
+#selected-rating {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Khu vực bình luận */
+.comment-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comment-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.comment-box {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.comment-box:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Nút gửi bình luận */
+.comment-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.comment-section button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Danh sách bình luận */
+.comment-list {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.comment-list li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.comment-list li span {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .product {
+        width: 90%;
+    }
+
+    .stars {
+        font-size: 24px;
+    }
+
+    .comment-box {
+        font-size: 12px;
+    }
+
+    .comment-section button {
+        font-size: 12px;
+    }
+}

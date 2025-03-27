@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="b5.css">
+    <script src="b5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Quản lý công việc</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Nhập tên công việc..." required>
+            <button type="submit">Thêm công việc</button>
+        </form>
+        <div class="task-columns">
+            <div class="column" id="pending-tasks">
+                <h2>🕐 Chờ xử lý</h2>
+                <ul></ul>
+            </div>
+            <div class="column" id="in-progress-tasks">
+                <h2>🔨 Đang làm</h2>
+                <ul></ul>
+            </div>
+            <div class="column" id="completed-tasks">
+                <h2>✅ Hoàn thành</h2>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
